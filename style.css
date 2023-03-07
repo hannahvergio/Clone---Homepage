@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    border-bottom: 1px solid #d1d1d1cc;
+    background: #ffffffcc;
+    position: fixed;
+    z-index: 1000;
+}  
+
+nav #left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+}
+
+img{
+    width: 40px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+nav #left .search_bar {
+    width: 250px;
+    height: 40px;
+    background: #e3e3e3cc;
+    border-radius: 30px;
+    padding: 0 10px;
+    display: flex;
+    position: relative;
+    left: 15px;
+}
+
+nav #left .search_bar input {
+    padding: 12px 10px;
+    background: transparent;
+    outline: none;
+    border: 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+nav .buttons_left {
+    display: flex;
+    position: relative;
+    right: 45px;
+}
+
+nav .buttons_left button {
+    margin: 0 20px 0 20px;
+    padding: 16px 13px; 
+    border-radius: 16px;
+    font-size: 14px;
+    justify-content: center;
+    border: none;
+    background-color: #ffffffcc;
+    cursor: pointer;
+}
+
+nav .buttons_left button:hover {
+    background-color:rgb(146, 146, 146);
+}
+
+nav .buttons_right {
+    position: relative;
+    display: flex;
+    right: 45px;
+}
+
+nav .buttons_right button {
+    margin: 0 10px 0 10px;
+    font-size: 14px;
+    padding: 16px 13px; 
+    border-radius: 16px;
+    justify-content: center;
+    border: none;
+    background-color: #ffffffcc;
+    cursor: pointer;
+}
+
+nav .buttons_right button:hover {
+    background-color:rgb(146, 146, 146);
+}
+
+
+.side {
+    display: flex;
+    margin-top: 60px;
+    background: #ffffff;
+}
+
+.side .sidebar {
+    width: 25%;
+    height: 92vh;
+    padding: 20px 6px 6px 10px;
+}
+
+.side .sidebar .name{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+    padding: 1px 2px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.side .sidebar .name:hover {
+    background-color:rgb(146, 146, 146);
+    border-radius: 6px;
+}
+
+.side .sidebar .name img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 8px 15px 8px 0;
+}
+
+.buttons_sidebar p{
+    cursor: pointer;
+    padding: 16px 10px;
+    flex-direction: column;
+}
+
+.buttons_sidebar .see_more {
+    font-size: 13px;
+}
+.sidebar .buttons_sidebar p:hover {
+    background-color:rgb(146, 146, 146);
+    border-radius: 6px;
+}
+
+.main .content {
+    height: auto;
+    padding: 20px 20px 0 20px;
+    margin: 25%;
+}
+
+.main .post {
+    width: 200%;
+    height: auto;
+    padding: 10px 15px;
+    border-radius: 7px;
+    box-shadow: 0 1px 8px #000 (0, 0, 0, 0.2);
+    margin: 10px 0;
+    background-color: #e6e6e6;
+}
+
+.main .post .content {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 10px 15px;
+    border-radius: 7px;
+    box-shadow: 0 1px 8px #000 (0, 0, 0, 0.2);
+    margin: 10px 0;
+}
+
+.main .post .content {
+    display: flex;
+    align-items: center;
+}
+
+.main .content img {
+    border-radius: 50%;
+}
+
+.main .post .content input {
+    width: 90%;
+    padding: 10px;
+    margin-left: 20px;
+    outline: none;
+    border-radius: 30px;
+    border: none
+}
+
+.main .post_menu {
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 5px auto;
+}
+
+.main .post_menu button {
+    border: none;
+    font-size: 13px;
+    padding: 8px 10px;
+    background-color: transparent;
+}
+
+.main .post_menu button:hover {
+    background-color:rgb(146, 146, 146);
+    border-radius: 6px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    nav #left .search_bar{
+        font-size: 0;
+        width: 70px;
+    }
+
+    nav .buttons_left {
+        display: none;
+    }
+
+    .sidebar {
+        display: none;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
+
+
+
